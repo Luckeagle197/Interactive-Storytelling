@@ -7,7 +7,7 @@ screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("Interactive Story")
 
 # Set up fonts
-font = pygame.font.Font(None, 36)
+font = pygame.font.Font(None, 72)
 
 # Colors
 WHITE = (255, 255, 255)
@@ -21,11 +21,11 @@ while running:
             running = False
 
     # Fill the screen with white
-    screen.fill(WHITE)
+    screen.fill(BLACK)
 
     # Render some text
-    text = font.render("Once upon a time...", True, BLACK)
-    screen.blit(text, (50, 50))
+    text = font.render("Once upon a time...", False, WHITE)
+    screen.blit(text, (1, 2))
 
     # Update the display
     pygame.display.flip()
